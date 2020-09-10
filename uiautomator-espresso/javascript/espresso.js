@@ -1,7 +1,7 @@
 const request = require('request')
 
 const username = process.env.KOBITON_USERNAME
-const apiKey = rocess.env.KOBITON_API_KEY
+const apiKey = process.env.KOBITON_API_KEY
 
 const encodeAuth = `Basic ${Buffer.from(`${username}:${apiKey}`).toString('base64')}`
 
